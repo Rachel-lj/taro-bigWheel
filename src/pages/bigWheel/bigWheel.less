@@ -1,0 +1,395 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  z-index: 1;
+  height: 100%;
+}
+.iconWheelBg {
+  width: 750px;
+  height: 1750px;
+  z-index: -1;
+  position: absolute;
+}
+.history {
+  width: 750px;
+  height: 35px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  line-height: 35px;
+  text-decoration: underline;
+  position: absolute;
+  text-align: right;
+  top: 30px;
+  right: 20px;
+}
+.title {
+  width: 750px;
+  height: 80px;
+  font-size: 70px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 8px;
+  position: absolute;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  top: 95px;
+}
+.rollNum {
+  width: 750px;
+  height: 30px;
+  font-size: 29px;
+  font-family: PingFang SC;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 1);
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 190px;
+}
+.plate-wrap-box {
+  position: relative;
+  z-index: 999;
+  width: 750px;
+  height: 678px;
+  border-radius: 50%;
+  top: 325px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.iconWheelCircle {
+  width: 678px;
+  height: 678px;
+  z-index: 9;
+  position: relative;
+  border-radius: 50%;
+}
+.plate-border {
+  width: 678px;
+  height: 678px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.plate-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 440px;
+  height: 440px;
+  border: 5px solid #f8ea6e;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.plate-light {
+  z-index: 1;
+  width: 500px;
+  height: 500px;
+  border: none;
+}
+
+.plate-box {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  width: 0;
+  height: 0;
+  font-size: 24px;
+}
+
+.bulb {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: -242px;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  background-color: #fff0c7;
+  filter: blur(0.5px);
+}
+
+.text-box {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  width: 140px;
+  word-break: break-all;
+  top: -200px;
+  transform: translate(-100%, 0);
+  font-size: 19px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  left: 70px;
+}
+
+.plate-btn-wrap {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 126px;
+  height: 149px;
+  border-radius: 50%;
+}
+.iconWheelStart {
+  width: 126px;
+  height: 149px;
+  position: relative;
+  z-index: 11;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detial-wrap {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 950px;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 630px;
+  border-radius: 50%;
+}
+.iconWheelTitle {
+  width: 400px;
+  height: 110px;
+  top: 75px;
+  position: relative;
+}
+.detail-text {
+  width: 250px;
+  height: 95px;
+  font-size: 45px;
+  font-family: Source Han Sans CN;
+  font-weight: 800;
+  color: #a13d01;
+  line-height: 80px;
+  position: absolute;
+  top: 80px;
+  left: 255px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.iconWheelRuleBg {
+  width: 600px;
+  height: 600px;
+}
+.rule-detail {
+  width: 520px;
+  height: 480px;
+  font-size: 28px;
+  font-family: Source Han Sans CN;
+  font-weight: 550;
+  color: #f52c32;
+  overflow: hidden;
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  text-align: start;
+}
+// 中奖提示弹窗
+.wheel-modal {
+  width: 100vw;
+  height: 85vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.wheel-modal-mask {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.wheel-modal-content {
+  width: 750px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.modal-img {
+  width: 705px;
+  height: 520px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.modal-text {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 265px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+.modal-btnGroup {
+  width: 750px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 355px;
+}
+.modal-btn-giveUp {
+  width: 224px;
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 10px;
+}
+.modal-btn-get-short {
+  width: 224px;
+  height: 80px;
+  background: rgba(248, 228, 55, 1);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(243, 59, 61, 1);
+  margin-left: 10px;
+}
+.modal-btn-get-long {
+  width: 290px;
+  height: 80px;
+  background: rgba(248, 228, 55, 1);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(243, 59, 61, 1);
+  margin-left: 10px;
+}
+.modal-btn-continue {
+  width: 224px;
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(243, 59, 61, 1);
+}
+// 中奖纪录弹窗
+.history-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.history-modal-mask {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.history-modal-content {
+  width: 635px;
+  height: 500px;
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.iconWheelModalClose {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+.history-modal-header {
+  width: 635px;
+  height: 100px;
+  background: rgba(255, 79, 95, 1);
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 100px;
+}
+.history-modal-title {
+  height: 70px;
+  width: 25%;
+  line-height: 70px;
+  text-align: center;
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
+}
+.history-modal-table {
+  width: 635px;
+  height: 325px;
+  overflow: auto;
+  margin-bottom: 1px;
+}
+.history-modal-table-item {
+  height: 55px;
+  width: 25%;
+  line-height: 55px;
+  text-align: center;
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
